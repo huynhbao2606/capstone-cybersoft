@@ -6,11 +6,45 @@ h1, h2, h3, .font-heading {
     font-family: 'DM Sans', sans-serif;
 }
 
-.site-navbar {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0;
+header {
+
+}
+
+footer {
+
+}
+
+/*Carousel*/
+.carousel {
+
+}
+
+/*Services*/
+.services {
+
+}
+
+/*Content*/
+.content {
+
+}
+
+/*Funfact*/
+.funfact {
+
+}
+
+/*Pricing*/
+.pricing {
+
+}
+
+/*Faq*/
+.faq {
+
+}
+
+/*Testimonial*/
+.testmoinial {
+
 }
