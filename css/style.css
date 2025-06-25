@@ -1,61 +1,62 @@
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, .font-heading {
-    font-family: 'DM Sans', sans-serif;
+h1,
+h2,
+h3,
+.font-heading {
+  font-family: "DM Sans", sans-serif;
 }
 
 header {
+}
 
+main {
+  background-color: #efeae3;
 }
 
 footer {
-
 }
 
 /*Carousel*/
-.carousel {
-@keyframes stepSlide {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-800px);
-        } /* 5 logo x 160px */
-    }
 
-.animate-step-carousel {
-            animation: stepSlide 10s steps(5, end) infinite;
+.carousel {
+  @keyframes stepSlide {
+    0% {
+      transform: translateX(0);
     }
+    100% {
+      transform: translateX(-800px);
+    }
+    /* 5 logo x 160px */
+  }
+
+  .animate-step-carousel {
+    animation: stepSlide 10s steps(5, end) infinite;
+  }
 }
 
 /*Services*/
 .services {
-
 }
 
 /*Content*/
 .content {
-
 }
 
 /*Funfact*/
 .funfact {
-
 }
 
 /*Pricing*/
 .pricing {
-
 }
 
 /*Faq*/
 .faq {
-
 }
 
 /*Testimonial*/
 .testmoinial {
-
 }
