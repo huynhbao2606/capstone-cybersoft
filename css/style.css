@@ -16,18 +16,7 @@ footer {
 
 /*Carousel*/
 .carousel {
-@keyframes stepSlide {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-800px);
-        } /* 5 logo x 160px */
-    }
 
-.animate-step-carousel {
-            animation: stepSlide 10s steps(5, end) infinite;
-    }
 }
 
 /*Services*/
