@@ -1,26 +1,19 @@
-<section class="px-6 py-12 bg-white">
+<section class="px-6 py-12 bg-white max-w-7xl mx-auto">
   <div
-    class="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-28 items-center"
+    class="grid grid-cols-1 md:grid-cols-2 gap-28 md:gap-28 items-center pb-28"
   >
-    <div class="overflow-hidden rounded-2xl">
-      <img
-        src="/././images/content-image-1.jpg"
-        alt="dashboard"
-        width="526"
-        height="450"
-        class="h-auto w-full"
-      />
-    </div>
-    <div>
-      <!-- Tiêu đề -->
+    <div class="order-1 md:order-2">
       <div class="mb-6">
-        <h2 class="text-[88px] font-bold leading-tight">
+        <h2
+          class="text-[70px] sm:text-3xl lg:text-[70px] font-[700] leading-tight text-left"
+        >
           Accessible to a wider audience
         </h2>
       </div>
 
-      <!-- Nội dung mô tả -->
-      <div class="text-lg lg:text-xl leading-relaxed text-gray-700">
+      <div
+        class="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700 text-left"
+      >
         <p class="mb-6">
           Advanced AI capabilities accessible to a broader audience, including
           small &amp; medium-sized businesses and individuals who may not have
@@ -32,6 +25,79 @@
           the resources or expertise to develop.
         </p>
       </div>
+    </div>
+
+    <div class="order-2 md:order-1 overflow-hidden rounded-2xl">
+      <img
+        src="/images/content-image-1.jpg"
+        alt="dashboard"
+        width="526"
+        height="450"
+        class="h-auto w-full"
+      />
+    </div>
+  </div>
+
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-28 md:gap-28 items-center pb-28"
+  >
+    <div class="order-2 md:!order-1">
+      <div class="mb-6">
+        <h2
+          class="text-[70px] sm:text-3xl lg:text-[70px] font-[700] leading-tight text-left"
+        >
+          Providing quick deploy solutions
+        </h2>
+      </div>
+
+      <div
+        class="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700 text-left"
+      >
+        <p class="mb-7 last:mb-0">
+          Our AI SaaS solutions can be quickly deployed, enabling users to start
+          benefiting from AI capabilities without lengthy setup and development
+          times in fast-paced industries.
+        </p>
+
+        <ul
+          class="flex flex-col gap-y-5 font-[700] text-xxl lg:text-[28px] leading-tight tracking-tighter text-black lg:mt-12"
+        >
+          <li class="flex items-start gap-x-3">
+            <img
+              src="/images/check-circle.svg"
+              alt="check-circle"
+              class="w-[30px] h-[30px] mt-[2.5px]"
+            />
+            Ready-to-use AI capabilities system
+          </li>
+          <li class="flex items-start gap-x-3">
+            <img
+              src="/images/check-circle.svg"
+              alt="check-circle"
+              class="w-[30px] h-[30px] mt-[2.5px]"
+            />
+            Users can quickly integrate AI features
+          </li>
+          <li class="flex items-start gap-x-3">
+            <img
+              src="/images/check-circle.svg"
+              alt="check-circle"
+              class="w-[30px] h-[30px] mt-[2.5px]"
+            />
+            Time savings translate to cost savings
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="order-1 md:!order-2 overflow-hidden rounded-2xl">
+      <img
+        src="/images/content-image-2.jpg"
+        alt="dashboard"
+        width="526"
+        height="450"
+        class="h-auto w-full"
+      />
     </div>
   </div>
 </section>
