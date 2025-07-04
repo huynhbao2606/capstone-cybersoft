@@ -80,6 +80,24 @@ footer {
   animation: floatingGlow 6s ease-in-out infinite;
 }
 
+@keyframes gradientBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 050%;
+  }
+}
+
+.animate-gradient-bg {
+  background: linear-gradient(to right, #904e95, #e96443);
+  background-size: 200% 200%;
+  animation: gradientBackground 4s ease infinite;
+}
+
 .text-gradient-animate {
   background: linear-gradient(-45deg, #f7971e, #ffd200, #ff416c);
   background-size: 300% 300%;
