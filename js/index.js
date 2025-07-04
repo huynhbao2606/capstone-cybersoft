@@ -41,6 +41,7 @@ function initLibraries() {
   initLightbox();
   initFlowbite();
   initJos();
+  initTab();
 }
 
 /**
@@ -80,4 +81,46 @@ function initJos() {
   if (typeof JOS !== "undefined") {
     JOS.init();
   }
+}
+
+/*
+Menu Tab
+*  */
+function initTab() {
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+  const activeBg = document.getElementById("active-bg");
+
+  tabButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      // Reset trạng thái nút
+      tabButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.classList.toggle("text-white", false);
+        btn.classList.toggle("text-black", true);
+      });
+
+      // Kích hoạt nút hiện tại
+      button.classList.add("active");
+      button.classList.remove("text-black");
+      button.classList.add("text-white");
+
+      // Di chuyển nền đen (activeBg)
+      if (index === 0) {
+        activeBg.style.left = "0%";
+        activeBg.classList.remove("rounded-r-full", "rounded-l-none");
+        activeBg.classList.add("rounded-l-full", "rounded-r-none");
+      } else {
+        activeBg.style.left = "50%";
+        activeBg.classList.remove("rounded-l-full", "rounded-r-none");
+        activeBg.classList.add("rounded-r-full", "rounded-l-none");
+      }
+
+      // Hiển thị nội dung tab tương ứng
+      const tabId = button.getAttribute("data-tab");
+      tabContents.forEach((content) => content.classList.add("hidden"));
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) targetTab.classList.remove("hidden");
+    });
+  });
 }
