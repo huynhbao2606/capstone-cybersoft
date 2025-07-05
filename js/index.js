@@ -52,6 +52,7 @@ function initLibraries() {
 function initSlick() {
   if (typeof $ !== "undefined" && $(".my-slider").length > 0) {
     console.log("Khởi tạo slick...");
+
     $(".my-slider").slick({
       slidesToShow: 5,
       slidesToScroll: 1,
@@ -61,6 +62,20 @@ function initSlick() {
       arrows: false,
       dots: false,
       cssEase: "ease",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ],
     });
   } else {
     console.warn("Không tìm thấy .my-slider hoặc jQuery chưa có.");
