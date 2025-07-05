@@ -1,3 +1,4 @@
+/* ========== Base ========== */
 body {
   font-family: "Inter", sans-serif;
 }
@@ -18,48 +19,29 @@ main {
 footer {
 }
 
-/*Carousel*/
-
+/* ========== Layout ========== */
 .carousel {
-  @keyframes stepSlide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-800px);
-    }
-    /* 5 logo x 160px */
-  }
-
-  .animate-step-carousel {
-    animation: stepSlide 10s steps(5, end) infinite;
-  }
 }
 
-/*Services*/
 .services {
 }
 
-/*Content*/
 .content {
 }
 
-/*Funfact*/
 .funfact {
 }
 
-/*Pricing*/
 .pricing {
 }
 
-/*Faq*/
 .faq {
 }
 
-/*Testimonial*/
 .testmoinial {
 }
 
+/* ========== Gradient Elements ========== */
 .orange-gradient-1 {
   background: radial-gradient(
     circle at center,
@@ -80,18 +62,6 @@ footer {
   animation: floatingGlow 6s ease-in-out infinite;
 }
 
-@keyframes gradientBackground {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 050%;
-  }
-}
-
 .animate-gradient-bg {
   background: linear-gradient(to right, #904e95, #e96443);
   background-size: 200% 200%;
@@ -104,6 +74,32 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 6s ease infinite;
+}
+
+.scroll-marquee {
+  animation: scrollX 10s linear infinite;
+}
+
+/* ========== Keyframes ========== */
+@keyframes stepSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @keyframes gradientMove {
@@ -136,10 +132,6 @@ footer {
   }
 }
 
-.scroll-marquee {
-  animation: scrollX 10s linear infinite;
-}
-
 @keyframes floatingGlow {
   0% {
     transform: translateY(0) rotate(0deg) scale(1);
@@ -153,6 +145,11 @@ footer {
     transform: translateY(0) rotate(0deg) scale(1);
     opacity: 0.7;
   }
+}
+
+/* ========== Utility ========== */
+[drawer-backdrop] {
+  display: none !important;
 }
 
 #backToTop.back-to-top {
@@ -174,4 +171,9 @@ footer {
   z-index: 9999;
   animation: gradientBackground 4s ease infinite;
   max-width: calc(100vw - 32px);
+}
+
+/* ========== Animations Classes ========== */
+.carousel .animate-step-carousel {
+  animation: stepSlide 10s steps(5, end) infinite;
 }
