@@ -70,7 +70,7 @@
         },
         {
           offset: "100%",
-          triggerOnce: false,
+          triggerOnce: true,
         },
       );
     });
