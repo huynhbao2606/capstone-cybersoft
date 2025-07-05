@@ -3,6 +3,7 @@
   class="relative z-[1] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-[#EFEAE3] lg:rounded-tl-[50px] lg:rounded-tr-[50px] jos"
   data-jos_animation="shink"
   data-jos_counter="1"
+  data-jos_scrolldirection="up"
 >
   <div
     class="py-[60px] xl:pb-[100px] xl:pt-[130px] bg-[#EFEAE3] overflow-hidden"
@@ -80,11 +81,10 @@
   </div>
 
   <div class="mx-auto max-w-7xl">
-    <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+    <div class="w-full"></div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-[60px] xl:gap-20 xl:py-[100px]"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-[60px] xl:gap-20 xl:py-[100px] ps-5"
     >
-      <!-- Cột 1 -->
       <div
         class="flex flex-col gap-y-6 text-[18px] sm:ps-10 max-w-[300px] w-full jos"
         data-jos_animation="fade-up"
@@ -92,7 +92,11 @@
         <a class="inline-block" href="/">
           <img src="/images/logo.png" alt="logo" width="96" height="24" />
         </a>
-        <p>Our mission is to harness the power of AI...</p>
+        <p>
+          Our mission is to harness the power of AI to solve complex business
+          challenges & decision-makers with data-driven insights, and enhance
+          user experiences across digital platforms.
+        </p>
         <p>
           Website:
           <a
@@ -103,7 +107,6 @@
         </p>
       </div>
 
-      <!-- Cột 2 -->
       <div
         class="flex flex-col gap-y-6 md:ps-10 jos"
         data-jos_animation="fade-up"
@@ -119,7 +122,6 @@
         </ul>
       </div>
 
-      <!-- Cột 3 -->
       <div
         class="flex flex-col gap-y-6 sm:ps-10 jos"
         data-jos_animation="fade-up"
@@ -134,7 +136,6 @@
         </ul>
       </div>
 
-      <!-- Cột 4 -->
       <div
         class="flex flex-col gap-y-6 text-[18px] jos"
         data-jos_animation="fade-up"
@@ -164,7 +165,6 @@
 
     <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
 
-    <!-- Copyright -->
     <div class="py-9 text-center text-[19px] jos" data-jos_animation="zoom-in">
       <p class="text-[17px] text-center">
         &copy; Copyright 2025, All Rights Reserved by
@@ -186,3 +186,13 @@
     class="orange-gradient-2 absolute right-[30px] md:right-[90px] top-[650px] md:top-[700px] -z-[1] w-[220px] h-[220px] md:w-[300px] md:h-[300px] animate-spin rounded-full floating-glow"
   ></div>
 </footer>
+<button
+  id="backToTop"
+  class="jos fixed bottom-6 left-auto right-4 sm:right-6 z-50 w-[60px] h-[60px] rounded-[18px] shadow-lg flex items-center justify-center text-white text-2xl hidden animate-gradient-bg cursor-pointer"
+  style="transform: translateX(0)"
+  data-jos_animation="zoom"
+  data-jos_once="false"
+  data-jos_hide="true"
+>
+  ↑
+</button>
