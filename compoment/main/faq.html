@@ -1,100 +1,124 @@
 <section id="faq">
   <div
-    class="max-w-6xl mx-auto mt-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
+    class="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-40"
   >
-    <div>
-      <h2 class="text-6xl font-bold leading-tight mb-6">
-        Freely ask us for<br />
-        more information
+    <div class="jos" data-jos_animation="fade-right" data-jos_counter="1">
+      <h2 class="text-[70px] font-bold leading-tight mb-6 max-w-[600px]">
+        Freely ask us for<br />more information
       </h2>
-      <p class="text-black-600 text-base mb-8 leading-relaxed">
+      <p class="text-[18px] text-black-600 mb-8 leading-relaxed">
         Our AI SaaS solutions can be quickly deployed, enabling users to start
         benefiting from AI capabilities without lengthy setup and development
         times in fast-paced industries.
       </p>
-      <button class="bg-black text-white font-semibold px-6 py-3 rounded-full">
-        Ask you questions
-      </button>
+      <a
+        href="#"
+        class="inline-block rounded-full border-2 border-black bg-black py-4 px-6 text-white font-semibold hover:border-[#FE330A] hover:bg-[#FE330A]"
+      >
+        Ask your questions
+      </a>
     </div>
 
-    <div class="space-y-4">
-      <div class="border-b">
-        <input type="radio" name="faq" id="faq1" class="peer hidden" checked />
-
-        <label
-          for="faq1"
-          class="flex justify-between items-start py-5 cursor-pointer"
-        >
-          <span class="text-3xl font-semibold">How do I start AI SaaS?</span>
-          <img
-            src="https://azzle.netlify.app/assets/img/plus.svg"
-            class="w-5 h-5 transform transition-transform duration-300 peer-checked:rotate-45"
-            alt="plus icon"
-          />
-        </label>
-
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="text-black"
+      data-inactive-classes="text-black"
+      class="divide-y-0 jos"
+      data-jos_animation="fade-left"
+      data-jos_counter="1"
+    >
+      <div class="border-b border-gray-200">
+        <h2 id="accordion-flush-heading-1">
+          <button
+            type="button"
+            class="group flex items-center justify-between w-full py-5 text-left text-black font-bold text-xl cursor-pointer"
+            data-accordion-target="#accordion-flush-body-1"
+            aria-expanded="true"
+            aria-controls="accordion-flush-body-1"
+          >
+            <span class="text-3xl font-[700]">How do I start AI SaaS?</span>
+            <img
+              src="/images/plus.svg"
+              class="w-7 h-7 transition-transform duration-300 group-aria-expanded:rotate-45"
+              alt="plus icon"
+            />
+          </button>
+        </h2>
         <div
-          class="max-h-0 peer-checked:max-h-[300px] overflow-hidden transition-all duration-300"
+          id="accordion-flush-body-1"
+          class=""
+          aria-labelledby="accordion-flush-heading-1"
         >
-          <p class="text-black-700 pb-6">
+          <div class="pb-5 text-gray-800 text-lg">
             Go to the our official website and require users to create an
             account. You'll need to provide some basic information and agree to
             our terms and conditions.
-          </p>
+          </div>
         </div>
       </div>
 
-      <div class="border-b">
-        <input type="radio" name="faq" id="faq2" class="peer hidden" />
-
-        <label
-          for="faq2"
-          class="flex justify-between items-start py-5 cursor-pointer"
-        >
-          <span class="text-3xl font-semibold"
-            >Can I customize AI SaaS solutions?</span
+      <div class="border-b border-gray-200">
+        <h2 id="accordion-flush-heading-2">
+          <button
+            type="button"
+            class="group flex items-center justify-between w-full py-5 text-left text-black font-bold text-xl cursor-pointer"
+            data-accordion-target="#accordion-flush-body-2"
+            aria-expanded="false"
+            aria-controls="accordion-flush-body-2"
           >
-          <img
-            src="https://azzle.netlify.app/assets/img/plus.svg"
-            class="w-5 h-5 transform transition-transform duration-300 peer-checked:rotate-45"
-            alt="plus icon"
-          />
-        </label>
-
+            <span class="text-3xl font-[700]"
+              >Can I customize AI SaaS solutions?</span
+            >
+            <img
+              src="/images/plus.svg"
+              class="w-7 h-7 transition-transform duration-300 group-aria-expanded:rotate-45"
+              alt="plus icon"
+            />
+          </button>
+        </h2>
         <div
-          class="max-h-0 peer-checked:max-h-[300px] overflow-hidden transition-all duration-300"
+          id="accordion-flush-body-2"
+          class="hidden"
+          aria-labelledby="accordion-flush-heading-2"
         >
-          <p class="text-gray-700 pb-6">
-            Yes, you can customize AI SaaS through integration APIs, white-label
-            branding and feature controls.
-          </p>
+          <div class="pb-5 text-gray-800 text-lg">
+            Go to the our official website and require users to create an
+            account. You'll need to provide some basic information and agree to
+            our terms and conditions.
+          </div>
         </div>
       </div>
 
-      <div class="border-b">
-        <input type="radio" name="faq" id="faq3" class="peer hidden" />
-
-        <label
-          for="faq3"
-          class="flex justify-between items-start py-5 cursor-pointer"
-        >
-          <span class="text-3xl font-semibold"
-            >How can AI benefit my business?</span
+      <div class="border-b border-gray-200">
+        <h2 id="accordion-flush-heading-3">
+          <button
+            type="button"
+            class="group flex items-center justify-between w-full py-5 text-left text-black font-bold text-xl cursor-pointer"
+            data-accordion-target="#accordion-flush-body-3"
+            aria-expanded="false"
+            aria-controls="accordion-flush-body-3"
           >
-          <img
-            src="https://azzle.netlify.app/assets/img/plus.svg"
-            class="w-5 h-5 transform transition-transform duration-300 peer-checked:rotate-45"
-            alt="plus icon"
-          />
-        </label>
-
+            <span class="text-3xl font-[700]"
+              >How can AI benefit my business?</span
+            >
+            <img
+              src="/images/plus.svg"
+              class="w-7 h-7 transition-transform duration-300 group-aria-expanded:rotate-45"
+              alt="plus icon"
+            />
+          </button>
+        </h2>
         <div
-          class="max-h-0 peer-checked:max-h-[300px] overflow-hidden transition-all duration-300"
+          id="accordion-flush-body-3"
+          class="hidden"
+          aria-labelledby="accordion-flush-heading-3"
         >
-          <p class="text-gray-700 pb-6">
-            AI can automate tasks, analyze large datasets, personalize user
-            experience and help you make data-driven decisions.
-          </p>
+          <div class="pb-5 text-gray-800 text-lg">
+            Go to the our official website and require users to create an
+            account. You'll need to provide some basic information and agree to
+            our terms and conditions.
+          </div>
         </div>
       </div>
     </div>
