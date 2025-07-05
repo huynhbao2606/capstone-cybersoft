@@ -1,4 +1,16 @@
 
+# 📷 Task Manager
+
+![Task](https://github.com/user-attachments/assets/0d71a610-cc2f-43b6-8736-b9b9db043ed8)
+
+---
+
+# 📎 Link Task Notion
+
+👉 [Click để xem Notion Taskboard](https://salty-payment-257.notion.site/2170b462417e80918ac0f262c4ad5b57?v=2170b462417e81aa81d3000c5b50db58)
+
+---
+
 # 🚀 Quy trình làm việc với Git
 
 ## 📌 Trước khi bắt đầu code
@@ -65,15 +77,3 @@ git push origin header
   ```bash
   git checkout <ten-branch>
   ```
-
----
-
-## 📎 Link Task Notion
-
-👉 [Click để xem Notion Taskboard](https://salty-payment-257.notion.site/2170b462417e80918ac0f262c4ad5b57?v=2170b462417e81aa81d3000c5b50db58)
-
----
-
-## 📷 Task 
-
-![Giao diện mẫu](https://github.com/user-attachments/assets/0d71a610-cc2f-43b6-8736-b9b9db043ed8)
