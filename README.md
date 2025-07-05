@@ -1,7 +1,13 @@
 
-# 📷 Task Manager
+# 🌐 Website Demo
 
-![Task](https://github.com/user-attachments/assets/0d71a610-cc2f-43b6-8736-b9b9db043ed8)
+🔗 [https://capstone-cybersoft.vercel.app/](https://capstone-cybersoft.vercel.app/)
+
+---
+
+# 📷 Tham khảo giao diện
+
+![Giao diện mẫu](https://github.com/user-attachments/assets/7f969db1-329e-4810-8da3-b9697b5fecec)
 
 ---
 
@@ -11,10 +17,35 @@
 
 ---
 
+# 🛠️ Công nghệ & Thư viện sử dụng
+
+- **Ngôn ngữ & Kỹ thuật:**
+  - HTML5, CSS3, JavaScript (ES6+)
+  - Responsive Design
+
+- **Framework & Thư viện chính:**
+  - [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+  - [Flowbite](https://flowbite.com/) – UI components dựa trên Tailwind
+  - [jQuery](https://jquery.com/) – Thư viện JS phổ biến
+  - [Waypoints](http://imakewebthings.com/waypoints/) – Scroll-based event triggers
+  - [JOS Animation](https://github.com/jos-studio/jos-animation) – Scroll animation nhẹ
+  - [Slick Carousel](https://kenwheeler.github.io/slick/) – Tạo slider responsive
+  - [CountUp jQuery Plugin](https://inorganik.github.io/countUp.js/) – Hiển thị số tăng dần
+  - [FsLightbox](https://fslightbox.com/javascript) – Hiển thị ảnh popup đẹp mắt
+  - [Google Fonts](https://fonts.google.com/) – Phông chữ web
+
+- **Cấu trúc thư mục:**
+  - `component/` – Các thành phần giao diện
+  - `css/`, `js/`, `images/` – Tài nguyên tĩnh
+  - `index.html` – Trang chính
+
+---
+
 # 🚀 Quy trình làm việc với Git
 
 ## 📌 Trước khi bắt đầu code
-> **Chỉ thực hiện bước này nếu bạn đã hoàn thành tính năng đang làm trên branch riêng. Nếu chưa hoàn thành, hãy bỏ qua bước này.**
+
+> **chỉ pull khi đã làm xong tính năng ở branch của mình, nếu chưa làm xong thì không cần mà cứ tiếp tục làm.**
 
 ```bash
 git pull origin main
@@ -35,7 +66,7 @@ git checkout -b header
 
 ## 💻 Trong quá trình code
 
-> Dù bạn chưa hoàn thành tính năng, vẫn **phải commit thường xuyên** để tránh mất dữ liệu.
+> Dù chưa xong vẫn **phải commit thường xuyên** để tránh mất dữ liệu.
 
 ```bash
 git add .
@@ -47,7 +78,7 @@ git commit -m "Thông tin rõ ràng về nội dung commit"
 - `123123`
 - `aaa`
 
-✅ Ví dụ nội dung commit hợp lệ:
+✅ Ví dụ nội dung commit:
 - `"add Header UI"`
 - `"fix responsive issue for mobile"`
 - `"update login validation"`
