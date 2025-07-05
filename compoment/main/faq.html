@@ -13,9 +13,15 @@
       </p>
       <a
         href="#"
-        class="inline-block rounded-full border-2 border-black bg-black py-4 px-6 text-white font-semibold hover:border-[#FE330A] hover:bg-[#FE330A]"
+        class="relative inline-block group px-6 py-4 rounded-full overflow-hidden"
       >
-        Ask your questions
+        <span class="absolute inset-0 bg-black z-0"></span>
+        <span
+          class="absolute inset-0 bg-[#FE330A] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-0"
+        ></span>
+        <span class="relative z-10 text-white font-semibold">
+          Ask you questions
+        </span>
       </a>
     </div>
 
