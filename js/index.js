@@ -117,16 +117,6 @@ function initCountUp() {
     time: 2000,
     delay: 10,
   });
-  document.addEventListener("josEnter", function (e) {
-    const $counter = $(e.target).find(".counter");
-    $counter.each(function () {
-      const $el = $(this);
-      const target = $el.data("count") || $el.text();
-      $el.text("0"); // reset số
-      $el.prop("counterupTo", target); // gán lại số đích
-      $el.countUp(); // gọi lại countUp
-    });
-  });
 }
 
 /*
