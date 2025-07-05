@@ -71,8 +71,8 @@ function initSlick() {
  * LightBox
  */
 function initLightbox() {
-  if (typeof Lightbox !== "undefined") {
-    Lightbox.refresh?.();
+  if (typeof FsLightbox !== "undefined") {
+    window.refreshFsLightbox();
   }
 }
 
